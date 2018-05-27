@@ -25822,7 +25822,7 @@ ul.arrow-list li::before {
 .header-top {
   border-bottom: 1px solid #eee;
   position: relative;
-  z-index: 9997;
+  z-index: 0;
 }
 
 .header-top ul li a {
