@@ -616,7 +616,7 @@
                                    placeholder="Email Address">
                         </div>
                         <div class="form-group has-icon"><i class="icon-user-secret"></i>
-                            <input name="pass" type="text" class="form-control form-control-lg"
+                            <input name="pass" type="password" class="form-control form-control-lg"
                                    placeholder="Password">
                         </div>
                         <input type="submit" class="btn btn-primary btn-lg btn-block" name="submit_Login" value="Log In">
@@ -720,6 +720,23 @@
             </div>
         </div>
     </div>
+
+    <div class="modal fade" id="modalUncon" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog width-400" role="document">
+            <div class="modal-content no-r "><a href="#" data-dismiss="modal" aria-label="Close"
+                                                class="paper-nav-toggle active"><i></i></a>
+                <div
+                        class="modal-body no-p">
+                    <div class="text-center p-40 p-b-0">
+                        <img src="assets/img/dummy/uncon.png" alt="">
+                        <h3 class="p-t-b-20">Unfortunately!</h3>
+                        <p>You have to confirm your account first!</p>
+                        <p>Check your email 😉</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 <!--End Page page_wrrapper -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
@@ -734,6 +751,9 @@ if(isset($_GET['new'])){
 }
 if(isset($_GET['con'])){
     echo "<script>$('#modalDone').modal();</script>";
+}
+if(isset($_GET['uncon'])){
+    echo "<script>$('#modalUncon').modal();</script>";
 }
 ?>
 <script>
