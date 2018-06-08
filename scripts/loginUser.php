@@ -15,7 +15,7 @@ if(isset($_POST['submit_Login'])){
     $pass = mysqli_escape_string($dbCon,$pass);
 
 
-    $query="SELECT * FROM Users WHERE email = '{$email}'";
+    $query="SELECT * FROM ci_Users WHERE email = '{$email}'";
     $run = mysqli_query($dbCon,$query);
 
     if(mysqli_num_rows($run) > 0){

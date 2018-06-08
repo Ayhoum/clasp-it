@@ -143,7 +143,7 @@ $().ready(function(){
 
       } else {
 
-          $('.sidebar .sidebar-wrapper, .main-panel').perfectScrollbar('destroy');
+          // $('.sidebar .sidebar-wrapper, .main-panel').perfectScrollbar('destroy');
 
           setTimeout(function() {
               $('body').addClass('sidebar-mini');
@@ -1241,9 +1241,9 @@ var demo = {
         $calendar.fullCalendar({
             viewRender: function(view, element) {
                 // We make sure that we activate the perfect scrollbar when the view isn't on Month
-                if (view.name != 'month') {
-                    $(element).find('.fc-scroller').perfectScrollbar();
-                }
+                // if (view.name != 'month') {
+                //     $(element).find('.fc-scroller').perfectScrollbar();
+                // }
             },
             header: {
                 left: 'title',

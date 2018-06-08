@@ -9512,7 +9512,7 @@ form {
     -webkit-transition-duration: 0.3s;
             transition-duration: 0.3s; }
   .form-control::-moz-placeholder {
-    color: #AAAAAA;
+    color: #fbfbfb;
     font-weight: 400;
     font-size: 14px; }
   .form-control:-ms-input-placeholder {
@@ -11287,14 +11287,14 @@ fieldset[disabled] .form-group .form-control {
     .navbar.bg-dark .navbar-toggler .navbar-toggler-icon {
       background-color: #fff; }
   .navbar.navbar-transparent {
-    background-color: transparent !important;
+    /*background-color: transparent !important;*/
     -webkit-box-shadow: none;
             box-shadow: none;
     padding-top: 25px; }
   .navbar .notification {
     position: absolute;
     top: 5px;
-    border: 1px solid #FFF;
+    /*border: 1px solid #FFF;*/
     right: 10px;
     font-size: 9px;
     background: #f44336;

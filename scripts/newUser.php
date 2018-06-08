@@ -26,7 +26,7 @@ if(isset($_POST['submit_Signup'])){
 
     $random = rand(100000,999999);
 
-    $query = "INSERT INTO `Users`(`email`, `password`, `name`, `plan`, `acc_status`, `con_code`) VALUES ('{$email}','{$hashed}','{$name}', '0', '0', '{$random}')";
+    $query = "INSERT INTO `ci_Users`(`email`, `password`, `name`, `plan`, `acc_status`, `con_code`) VALUES ('{$email}','{$hashed}','{$name}', '0', '0', '{$random}')";
     $run = mysqli_query($dbCon, $query);
     if($run){
         header("Location: ../index.php?reg=1");
